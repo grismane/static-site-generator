@@ -1,10 +1,9 @@
-from textnode import *
-from htmlnode import *
+from textnode import TextNode, TextType
+
 
 def main():
-    dummy_node = TextNode("The pen is mightier", TextType.BOLD, "penismighty.gov")
-    print(dummy_node)
-    dummy_html_node = HTMLNode(tag="a", value="This is a link to google", props={"href": "https://www.google.com"})
-    print(dummy_html_node)
+    node = TextNode("This is a text node", TextType.BOLD, "https://www.boot.dev")
+    print(node)
+
 
 main()
